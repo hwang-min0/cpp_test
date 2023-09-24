@@ -1,0 +1,38 @@
+과정명 :  AI IoT 자율 로봇 개발자 양성과정            성명 :  황 민 영
+
+1. C 표준에서 제공하는 문자열 비교함수 strcmp()를 사용했을 때  같은  문자열을  발견했을때  어떤 것이 출력되는가?
+
+	strcmp(str1, str2) == 0;
+
+
+2. std:: string str{Jamboree};을  JAMboree 으로  바꾸는 코드를 작성하시오.(20점)
+
+	#include <iostream>
+	#include <cctype>
+	const int ArSize = 80;
+	int main()
+	{
+		std::string str{Jamboree};
+		std::cout << "Jamboree\n";
+		
+		str[1] = 'A';		
+  		str[2] = 'M';
+  		std::cout << str << std::endl;
+			
+		return 0; 
+
+	}
+3. 함수의 형태는 아래와 같다. 이 함수를 참조할  수 있게 함수포인터를 만들어 보시오.
+
+   void function(unsigned int length, int* ptr)
+  {
+  	ptr = new int[length];
+  	for(int i = 0; i < length;  ++i)
+  	{
+  		ptr[1] = i + 10;
+  	}
+  	return 0;
+  }	
+
+
+		답 : typedef void (*ptr_function)(insigned int, int*)

@@ -1,0 +1,54 @@
+4. length 가 125보다 크거나  같고, 250 작다 라는  것을 논리표현식으로 표현하시오.
+
+	 125<= length  && length < 250
+
+5.참조연산자를 사용하여 make_swap_value() 함수를 작성하시오.
+	
+	void make_swap_value(int &x, int &y)
+	{
+		int temp;
+		temp = x;
+		x = y;
+		y = temp;
+
+		return 0;
+	}
+
+
+6. 아래와 같은 배열을 출력할 수 있는 진보된(advanced) for 구문을 사용해서 출력하는  코드를 만들어 보시오.
+
+	int number[] { [0]:10, [1]: 9, [2]: 8, [3]: 7, [4]: 6, [5]: 5, [6]:4, [7]:3, [8]:2, [9]:1};
+
+	int main()
+	{	
+		int number[] { [0]:10, [1]: 9, [2]: 8, [3]: 7, [4]: 6, [5]: 5, [6]:4, [7]:3, [8]:2, [9]:1};
+		for ( auto i : number)
+		{
+			std::cout << i << '\t' <<std::endl;
+		}
+		return 0;
+	}
+
+
+7. 콘솔 화면에서 3개의 정숫값들을 입력받아서 총합과 평균을 계산하는 코드를 작성하시오. (20점)
+
+  #include <iostream>
+  
+  int main()
+  {
+  	int a, b, c;
+	std::cin >> a >> b >> c;
+
+	int total = a + b + c;
+	double avg = static_cast<double>(total) / 3.0;
+	std::cout << "총합 : " << total << '\t' << "평균 :" << avg << std::endl;
+
+  	return 0;
+  }
+
+
+
+
+
+
+
